@@ -6,7 +6,13 @@ import SwiftUI
 
 struct ReflectView: View {
     var body: some View {
-        Text("Reflect View")
+        NavigationStack {
+            VStack {
+                Text("Reflect View")
+            }
+            .navigationTitle("Reflect")
+            .toolbarTitleDisplayMode(.inlineLarge)
+        }
     }
 }
 

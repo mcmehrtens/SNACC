@@ -6,7 +6,21 @@ import SwiftUI
 
 struct LogView: View {
     var body: some View {
-        Text("Log View")
+        NavigationStack {
+            VStack {
+                Text("Log View")
+            }
+            .navigationTitle("Log")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button {
+
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+        }
     }
 }
 
