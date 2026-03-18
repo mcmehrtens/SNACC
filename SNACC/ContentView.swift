@@ -6,13 +6,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Tab("Home", systemImage: "house.fill") {
+                HomeView()
+            }
+
+            Tab("Log", systemImage: "list.bullet") {
+                LogView()
+            }
+
+            Tab("Reflect", systemImage: "chart.bar.xaxis") {
+                ReflectView()
+            }
         }
-        .padding()
     }
 }
 
