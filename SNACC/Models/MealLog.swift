@@ -3,3 +3,12 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 import Foundation
+import SwiftData
+
+class MealLog {
+    var meals: [Meal]
+
+    init(meals: [Meal] = []) {
+        self.meals = meals
+    }
+}

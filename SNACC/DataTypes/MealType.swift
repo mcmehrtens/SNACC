@@ -4,7 +4,7 @@
 
 import Foundation
 
-enum mealTypes {
+enum MealType: String, Codable {
     case breakfast
     case lunch
     case dinner
