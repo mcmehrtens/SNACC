@@ -6,10 +6,6 @@ import SwiftUI
 
 @main
 struct SNACCApp: App {
-    init() {
-        NavigationBarAppearance.configure()
-    }
-
     var body: some Scene {
         WindowGroup {
             ContentView()

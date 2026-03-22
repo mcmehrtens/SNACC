@@ -6,20 +6,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            Tab("Home", systemImage: "house.fill") {
-                HomeView()
+        NavigationStack {
+            VStack {
+                Text("Hello, world!")
             }
+            .toolbar {
+                ToolbarSpacer(placement: .bottomBar)
+                ToolbarItem(placement: .bottomBar) {
+                    Button("Add Meal", systemImage: "plus", role: .confirm) {
 
-            Tab("Log", systemImage: "list.bullet") {
-                LogView()
-            }
-
-            Tab("Reflect", systemImage: "chart.bar.xaxis") {
-                ReflectView()
+                    }
+                }
             }
         }
-        .fontDesign(.rounded)
     }
 }
 
